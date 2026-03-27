@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoxSolar - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: linear-gradient(180deg, #1a3a5c 0%, #0f2340 100%);
+            color: #E8E8F0;
+            font-family: -apple-system, "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: -apple-system, "SF Pro Rounded", "Helvetica Neue", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #FF8C00;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #9CA3AF;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #FF8C00;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #D1D5DB;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #FFa500;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .updated {
+            text-align: center;
+            font-size: 13px;
+            color: #6B7280;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NoxSolar</h1>
+        <div class="subtitle">Privacy Policy</div>
+
+        <div class="card">
+            <h2>Data Collection</h2>
+            <p>NoxSolar does not collect, store, or transmit any personal data. No account is required. No registration. No user profiles.</p>
+        </div>
+
+        <div class="card">
+            <h2>Network Requests</h2>
+            <p>NoxSolar makes requests to two external services to retrieve solar irradiance data for the location you specify:</p>
+            <p><strong>NASA POWER</strong> (power.larc.nasa.gov) &mdash; Satellite-derived solar radiation climatology data. Public domain, operated by NASA Langley Research Center. Your latitude and longitude are sent as query parameters to retrieve irradiance data. No personal identifiers are transmitted.</p>
+            <p><strong>PVGIS</strong> (re.jrc.ec.europa.eu) &mdash; Photovoltaic yield estimation, operated by the European Commission Joint Research Centre. Your latitude, longitude, and panel configuration are sent as query parameters. No personal identifiers are transmitted.</p>
+            <p>NoxSolar also uses Apple's MapKit geocoding services to convert place names to coordinates and vice versa. This is subject to Apple's own privacy policy.</p>
+        </div>
+
+        <div class="card">
+            <h2>Location Data</h2>
+            <p>If you grant location permission, NoxSolar uses your device location solely to look up solar irradiance data for your area. Location data is not transmitted to any server other than the NASA POWER and PVGIS APIs described above (as latitude and longitude coordinates). Location data is stored locally on your device only.</p>
+            <p>If you use the compass feature to determine roof orientation, heading data is processed entirely on-device and is not transmitted anywhere.</p>
+        </div>
+
+        <div class="card">
+            <h2>Local Data Storage</h2>
+            <p>NoxSolar stores your settings, panel configuration, and cached solar data locally on your device using UserDefaults and the app's Documents directory. This data never leaves your device. It is not backed up to any external server by the app.</p>
+        </div>
+
+        <div class="card">
+            <h2>Analytics and Tracking</h2>
+            <p>NoxSolar contains no analytics frameworks, no tracking code, no advertising SDKs, and no third-party libraries of any kind. Zero external dependencies.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children's Privacy</h2>
+            <p>NoxSolar does not knowingly collect any information from children under 13. The app does not collect information from anyone.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to This Policy</h2>
+            <p>If this privacy policy changes, the updated version will be posted here. The app itself contains no mechanism to notify you of policy changes, because there is nothing to notify you about &mdash; we don't have your contact details.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>If you have questions about this privacy policy, please open an issue on <a href="https://github.com/FractalDoctor/NoxSolar/issues">GitHub</a>.</p>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">&larr; Back to NoxSolar</a>
+        </div>
+
+        <div class="updated">Last updated: March 2026</div>
+    </div>
+</body>
+</html>

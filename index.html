@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoxSolar - Solar Panel Planner</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: linear-gradient(180deg, #1a3a5c 0%, #0f2340 100%);
+            color: #E8E8F0;
+            font-family: -apple-system, "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .sun {
+            text-align: center;
+            font-size: 64px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: -apple-system, "SF Pro Rounded", "Helvetica Neue", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #FF8C00;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 17px;
+            color: #9CA3AF;
+            font-style: italic;
+            margin-bottom: 32px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #D1D5DB;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FF8C00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #D1D5DB;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 4px 0;
+            color: #D1D5DB;
+        }
+
+        ul li::before {
+            content: "\2600\00a0\00a0";
+            color: #FF8C00;
+            font-size: 12px;
+        }
+
+        a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #FFa500;
+        }
+
+        .support-links {
+            margin-top: 16px;
+        }
+
+        .support-links li::before {
+            content: "\25B8\00a0\00a0";
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-links a {
+            margin: 0 16px;
+            font-size: 15px;
+        }
+
+        .data-note {
+            text-align: center;
+            font-size: 13px;
+            color: #6B7280;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun">&#9728;</div>
+        <h1>NoxSolar</h1>
+        <div class="subtitle">Solar Panel Planner</div>
+        <div class="tagline">"How much free energy is falling on your roof right now?"</div>
+
+        <div class="card">
+            <p>NoxSolar puts solar panel planning in your pocket. Everything you need to calculate your solar resource, estimate panel yield, and project financial returns &mdash; all in one place, on your phone, standing in your garden.</p>
+            <p>Point your phone at the roof. Punch in the numbers. Get answers.</p>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <ul>
+                <li>NASA POWER satellite data for any location on Earth</li>
+                <li>Compass-based roof orientation &mdash; point your phone where your roof faces</li>
+                <li>Visual roof pitch selector with animated diagram</li>
+                <li>Monthly irradiance and yield charts</li>
+                <li>25-year financial projection with year-by-year table</li>
+                <li>Payback period, ROI, and CO&#8322; offset calculations</li>
+                <li>Location comparison against global benchmarks</li>
+                <li>Works offline once data is cached</li>
+                <li>Supports GBP, EUR, and USD</li>
+                <li>Light and dark mode</li>
+                <li>No subscriptions, no in-app purchases, no ads</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Support</h2>
+            <p>If you have a question, found a bug, or want to suggest a feature, please get in touch via GitHub Issues:</p>
+            <ul class="support-links">
+                <li><a href="https://github.com/FractalDoctor/NoxSolar/issues/new?labels=question&template=blank">Ask a question</a></li>
+                <li><a href="https://github.com/FractalDoctor/NoxSolar/issues/new?labels=bug">Report a bug</a></li>
+                <li><a href="https://github.com/FractalDoctor/NoxSolar/issues/new?labels=enhancement">Request a feature</a></li>
+                <li><a href="https://github.com/FractalDoctor/NoxSolar/issues">Browse existing issues</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://github.com/FractalDoctor/NoxSolar/issues">Support &amp; Issues</a>
+        </div>
+
+        <div class="data-note">
+            Solar irradiance data from NASA POWER and EU PVGIS.<br>
+            NoxSolar is a planning tool, not a substitute for a professional site survey.
+        </div>
+    </div>
+</body>
+</html>
